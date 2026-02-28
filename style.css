@@ -563,7 +563,236 @@ body {
     margin-bottom: 10px;
 }
 
+/* Container */
+.enroll-right {
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form Inputs */
+.enroll-right input,
+.enroll-right select,
+.enroll-right textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+/* Focus Effect */
+.enroll-right input:focus,
+.enroll-right select:focus,
+.enroll-right textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* Textarea Resize */
+.enroll-right textarea {
+    resize: none;
+}
+
+/* Select Dropdown Arrow */
+.enroll-right select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%234f46e5' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 96%;
+    background-position-y: 50%;
+    background-size: 18px;
+}
+
+/* Human Check Section */
+.human-check {
+    background: #f9fafc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #eee;
+}
+
+.human-check label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.math-verify {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.math-verify input {
+    width: 120px;
+    margin-bottom: 0;
+}
+
+/* Error Message */
+#errorMsg {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* Submit Button */
+.enroll-right button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.enroll-right button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+}
+
+.enroll-right button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .enroll-right {
+        padding: 25px;
+    }
+}
+
 .faq-item p {
     font-size: 16px;
     line-height: 1.7;
+
+}
+
+/* Container */
+.enroll-right {
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form Inputs */
+.enroll-right input,
+.enroll-right select,
+.enroll-right textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+/* Focus Effect */
+.enroll-right input:focus,
+.enroll-right select:focus,
+.enroll-right textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* Textarea Resize */
+.enroll-right textarea {
+    resize: none;
+}
+
+/* Select Dropdown Arrow */
+.enroll-right select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%234f46e5' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 96%;
+    background-position-y: 50%;
+    background-size: 18px;
+}
+
+/* Human Check Section */
+.human-check {
+    background: #f9fafc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #eee;
+}
+
+.human-check label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.math-verify {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.math-verify input {
+    width: 120px;
+    margin-bottom: 0;
+}
+
+/* Error Message */
+#errorMsg {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* Submit Button */
+.enroll-right button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.enroll-right button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+}
+
+.enroll-right button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .enroll-right {
+        padding: 25px;
+    }
 }
