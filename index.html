@@ -64,62 +64,45 @@
                 <!-- RIGHT 50% -->
                 <div class="enroll-right">
 
-             <form action="https://formsubmit.co/dasthagiri.hachion@.com" method="POST" class="premium-form">
+            <form action="https://formspree.io/f/xdalodnq" method="POST" class="enquiry-form">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone / WhatsApp Number" required>
 
-    <h2>Enroll Now</h2>
+      <select name="country" required>
+        <option value="">Select Country</option>
+        <option>United States</option>
+        <option>Canada</option>
+        <option>United Kingdom</option>
+        <option>Australia</option>
+        <option>India</option>
+        <option>Germany</option>
+        <option>UAE</option>
+        <option>Singapore</option>
+        <option>Other</option>
+      </select>
 
-    <!-- Disable Captcha -->
-    <input type="hidden" name="_captcha" value="false">
+      <textarea name="message" rows="4" placeholder="Your Message"></textarea>
 
-    <!-- Redirect After Submit -->
-    <input type="hidden" name="_next" value="https://yourusername.github.io/thankyou.html">
+		   <div class="human-check">
+  <label>
+    <input type="checkbox" id="humanCheck">
+    I am not a robot
+  </label>
 
-    <!-- Full Name -->
-    <div class="input-group">
-        <input type="text" name="Full Name" required>
-        <label>Full Name</label>
-    </div>
+  <div class="math-verify">
+    <span id="mathQuestion"></span>
+    <input type="number" id="mathAnswer" placeholder="Your Answer">
+  </div>
 
-    <!-- Email -->
-    <div class="input-group">
-        <input type="email" name="Email" required>
-        <label>Email Address</label>
-    </div>
+  <p id="errorMsg" style="color:red; display:none;">Please verify you are human.</p>
+</div>
 
-    <!-- Phone -->
-    <div class="input-group">
-        <input type="tel" name="Phone Number" required>
-        <label>Phone Number</label>
-    </div>
 
-    <!-- WhatsApp -->
-    <div class="input-group">
-        <input type="tel" name="WhatsApp Number" required>
-        <label>WhatsApp Number</label>
-    </div>
+    <button type="submit">Submit Enquiry</button>
 
-    <!-- Country -->
-    <div class="input-group">
-        <select name="Country" required>
-           
-            <option>USA</option>
-            <option>India</option>
-            <option>Other</option>
-        </select>
-        <label>Country</label>
-    </div>
-
-    <!-- Source -->
-    <div class="input-group">
-        <input type="text" name="Found From" required>
-        <label>Where did you find us?</label>
-    </div>
-
-    <button type="submit" class="premium-btn">
-        Submit Enrollment
-    </button>
-
-</form>
+     
+    </form>
 
                 </div>
 
@@ -663,3 +646,4 @@
 </body>
 
 </html>
+
