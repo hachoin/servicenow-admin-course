@@ -881,3 +881,24 @@ body {
     color: #374151;
 }
 
+.accordion-content {
+    display: none;
+    padding: 15px 20px;
+    background: #f9fafc;
+}
+
+.accordion-btn.active {
+    background: #eef2ff;
+}
+
+.accordion-btn::after {
+    content: "+";
+    float: right;
+    font-size: 18px;
+}
+
+.accordion-btn.active::after {
+    content: "-";
+}
+
+
