@@ -796,3 +796,88 @@ body {
         padding: 25px;
     }
 }
+
+
+/* Curriculum Section */
+.curriculum-section {
+    padding: 80px 20px;
+    background: #f8fafc;
+}
+
+.curriculum-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.curriculum-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.curriculum-header h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+.curriculum-header p {
+    color: #6b7280;
+    font-size: 16px;
+}
+
+/* Accordion */
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    background: #ffffff;
+}
+
+.accordion-btn {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background: #ffffff;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.accordion-btn:hover {
+    background: #f1f5f9;
+}
+
+/* Arrow Icon */
+.accordion-btn::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.accordion-btn.active::after {
+    content: "-";
+}
+
+/* Hidden Content */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+}
+
+.accordion-content ul {
+    padding: 15px 0;
+}
+
+.accordion-content li {
+    margin-bottom: 8px;
+    color: #374151;
+}
+
