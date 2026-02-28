@@ -631,8 +631,38 @@
 </div>
 
 <script src="script.js"></script>
+	<script>
+window.onload = function () {
+    const accordionBtns = document.querySelectorAll(".accordion-btn");
+
+    accordionBtns.forEach(btn => {
+        btn.addEventListener("click", function () {
+
+            const content = this.nextElementSibling;
+
+            // Close all
+            document.querySelectorAll(".accordion-content").forEach(item => {
+                if (item !== content) {
+                    item.style.display = "none";
+                    item.previousElementSibling.classList.remove("active");
+                }
+            });
+
+            // Toggle current
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                this.classList.remove("active");
+            } else {
+                content.style.display = "block";
+                this.classList.add("active");
+            }
+        });
+    });
+};
+</script>
 </body>
 
 </html>
+
 
 
