@@ -81,21 +81,6 @@ form.addEventListener("submit", function(e) {
         });
     });
 
-let form = document.getElementById("corporateForm");
-let iframe = document.getElementById("hidden_iframe");
-let successMsg = document.getElementById("successMsg");
+;
 
-let submitted = false;
-
-form.addEventListener("submit", function() {
-    submitted = true;
-});
-
-iframe.addEventListener("load", function() {
-    if (submitted) {
-        successMsg.style.display = "block";
-        form.reset();
-        submitted = false;
-    }
-});
 
