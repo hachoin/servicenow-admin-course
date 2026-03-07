@@ -111,53 +111,42 @@ Become a Certified ServiceNow Professional and work with top global companies.
 Fill the form and our team will contact you shortly.
 </p>
 
-<form action="https://docs.google.com/forms/d/e/1FAIpQLSdlBQbZvfWu980Sk6WiXnyjr1X5p9q4t-nUksCLCgHf-fQZIw/formResponse"
+<form id="leadForm"
+action="https://docs.google.com/forms/d/e/1FAIpQLSdlBQbZvfWu980Sk6WiXnyjr1X5p9q4t-nUksCLCgHf-fQZIw/formResponse"
 method="POST"
-target="_blank">
+target="hidden_iframe">
 
 <div class="form-row">
-
 <input type="text" name="entry.2005178311" placeholder="Full Name*" required>
-
 <input type="email" name="entry.307833006" placeholder="Email Address*" required>
-
 </div>
-
 
 <div class="form-row">
-
-<input type="tel" name="entry.1578993421" placeholder="Phone Number*" required>
-
-<input type="tel" name="entry.25799438" placeholder="Whatsapp Number">
-
+<input type="tel" name="entry.1578993421" placeholder="Phone Number*" required pattern="[0-9]{10}">
 </div>
-
 
 <div class="form-row">
-
-<input type="text" name="entry.1928530760" value="ServiceNow" readonly>
-
+<input type="tel" name="entry.25799438" placeholder="Whatsapp Number*" required pattern="[0-9]{10}">
 </div>
-
 
 <div class="form-row">
-
-<input type="text" name="entry.701369711" placeholder="Country">
-
-<input type="text" name="entry.1184830051" placeholder="Location">
-
+<input type="text" name="entry.1928530760" value="ServiceNow" readonly required>
 </div>
-
 
 <div class="form-row">
-
-<input type="text" name="entry.1539449057" placeholder="How did you hear about us?">
-
+<input type="text" name="entry.701369711" placeholder="Country*" required>
+<input type="text" name="entry.1184830051" placeholder="Location*" required>
 </div>
 
-<button class="submit-btn">Submit Registration</button>
+<div class="form-row">
+<input type="text" name="entry.1539449057" placeholder="How did you hear about us?*" required>
+</div>
+
+<button type="submit" class="submit-btn">Submit Registration</button>
 
 </form>
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
 
 </div>
 
@@ -745,6 +734,7 @@ window.location.href="https://hachoin.github.io/servicenow-admin-course/";
 </body>
 
 </html>
+
 
 
 
